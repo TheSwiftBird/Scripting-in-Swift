@@ -1,3 +1,11 @@
 #!/usr/bin/env swift
 
-print("Hello Bird!")
+func sayHello(to name: String) {
+    print("Hello \(name)!")
+}
+
+print("What's your name?")
+
+let name = readLine()!
+
+sayHello(to: name)
